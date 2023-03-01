@@ -8,7 +8,7 @@
 :root{
 
     --light-:#ffffff;
-    --lightgrey-: #e5e5e5;
+    --lightgrey-: #e5e5e566;
     --primary-: #1b72e8;
     --primary_dark-: #165bba;
     --secondary-: #051e34;
@@ -85,16 +85,21 @@ img{
 }
 
 
-.sidebar{
+.sidebar
+{
     max-width: 220px;
     background-color: var(--secondary-);
     background-image: url("../img/sidebar-bg.png");
     background-size: cover;
-   
 }
 
 
-
+.sidebar_top li:hover,
+.sidebar_bottom div:hover
+{
+    background-color: var(--lightgrey-);
+    border-radius: 10px;
+}
 
 
 

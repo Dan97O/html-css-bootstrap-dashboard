@@ -111,9 +111,9 @@
 
     <main id="app_main" class="d-flex">
 
-        <div class="sidebar d-flex flex-column">
+        <section class="sidebar d-flex flex-column">
 
-            <div class="sidebar_top pt-3">
+            <div class="sidebar_top flex-grow-1 pt-3">
                 <ul class="list-unstyled mx-3 text-white">
                     <li class="px-1">
                       <div class="d-flex align-items-center">
@@ -136,20 +136,15 @@
                       </div>
                     </li>
                 </ul>
-                <!-- /sidebar top -->
-
-
-
-
-
-
-
-
-
-
             </div>
             <!-- /.sidebar_top -->
-            <div class="sidebar_bottom"></div>
+
+            <div class="sidebar_bottom">
+                <div class="d-flex align-items-center px-1 mx-3 mb-3">
+                    <i class="fa-solid fa-gear fa-fw mx-auto mx-xl-0 text-light"></i>
+                    <a href="#" class="d-none d-xl-inline-block ms-3 text-white text-decoration-none">Admin</a>
+                </div>
+            </div>
             <!-- /.sidebar_bottom -->
 
 
@@ -166,7 +161,8 @@
 
 
 
-        </div>
+        </section>
+        <!-- /section sidebar -->
 
         <div class="content"></div>
 
@@ -179,6 +175,37 @@
 
     </main>
     <!-- /#app_main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <footer id="app_footer"></footer>
     <!-- /#app_footer -->
 
