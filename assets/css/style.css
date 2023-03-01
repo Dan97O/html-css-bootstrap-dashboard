@@ -16,7 +16,9 @@
 }
 
 
-
+img{
+    width: 100%;
+}
 
 
 
@@ -49,6 +51,28 @@
    height:70px;
 }
 
+.logo {
+   width: 50px;
+   
+}
+
+.logo_large{
+    width: 150px; 
+    
+}
+
+.logo_small img{
+    height: 100%;
+}
+
+.bg_search{
+    background-color: var(--lightgrey-);
+}
+
+.bell {
+   
+    color: var(--bell-);
+}
 
 /* #endregion Header */
 
