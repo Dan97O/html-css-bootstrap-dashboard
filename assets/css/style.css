@@ -33,7 +33,7 @@ img{
 .debug .sidebar{
     background-color: #1b72e8;
     height: calc(100vh - 70px);
-    width: 70px;
+    
 }
 
 
@@ -85,7 +85,13 @@ img{
 }
 
 
-
+.sidebar{
+    max-width: 220px;
+    background-color: var(--secondary-);
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
+   
+}
 
 
 
