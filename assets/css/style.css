@@ -42,6 +42,12 @@ img{
   
 }
 
+.debug [class^="col-"]{
+    background-color: aquamarine;
+    border: 1px dashed;
+    height: 100px;
+}
+
 /* #endregion Debug */
 
 
@@ -129,6 +135,14 @@ img{
 
 .banner_top .student_offcanvas{
     width: 50%;
+}
+
+.img_avatar{
+    width: 30px;
+}
+
+#table table tr:hover{
+    background-color: var(--lightgrey-);
 }
 
 /* #endregion Main */
