@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --light-:#ffffff;
+    --lightgrey-: #e5e5e5;
+    --primary-: #1b72e8;
+    --primary_dark-: #165bba;
+    --secondary-: #051e34;
+    --bell-: #ff8f00;   
+}
+
+
+
+
+
+
+
+/* #region Debug */
+
+
+.debug #app_header{
+    background-color: orange ;
+}
+
+.debug .sidebar{
+    background-color: #1b72e8;
+    height: calc(100vh - 70px);
+    width: 70px;
+}
+
+
+.debug .content{
+    background-color: aqua;
+  
+}
+
+/* #endregion Debug */
+
+
+/* #region Header */
+
+#app_header{
+   height:70px;
+}
+
+
+/* #endregion Header */
+
+
+/* #region Main */
+
+.content{
+    height: calc(100vh - 70px);
+    width: calc(100% - 70px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #endregion Main */
+
+
+/* #region Footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #endregion Footer */
