@@ -102,9 +102,34 @@ img{
 }
 
 
+.banner_top,
+.banner_top .btn_student{
+    background-color: var(--primary-);
+    color: var(--light-);
+}
 
+.btn_student{
+    font-size: 21px;
+    margin-left: -10px;
+}
 
+.square{
+    border: 1px solid var(--light-);
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 21px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
 
+.square:hover{
+    background-color: var(--light-);
+    color: black;
+}
+
+.banner_top .student_offcanvas{
+    width: 50%;
+}
 
 /* #endregion Main */
 
@@ -126,3 +151,29 @@ img{
 
 
 /* #endregion Footer */
+
+
+/* #region @Media */
+
+@media screen and (max-width: 958px) {
+    .banner_top .student_offcanvas{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .student_online div{
+        text-align: center;
+    }
+}
+
+
+
+
+/* #endregion @Media */
+
+
+
+

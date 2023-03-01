@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Boolean</title>
+    <title>Bootstrap Dashboard</title>
 </head>
 <body class="">
     
@@ -164,7 +164,187 @@
         </section>
         <!-- /section sidebar -->
 
-        <div class="content"></div>
+        <div class="content">
+
+            <div class="banner_top">
+                <div class="container-fluid">
+                    <div class="row align-items-center text-light">
+
+                        <div class="col-12 col-md-4 col-xl-4 text-md-end order-md-1 py-4">        
+                            <button class="btn btn_student" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Nuovo Studente
+                                <span class="square">+</span>
+                            </button>
+                            <!-- button new student -->
+
+                            <div class="offcanvas offcanvas-end text-black student_offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header d-flex align-items-center">
+                                    <h5 class="offcanvas-title text-black" id="offcanvasRightLabel">Inserisci Nuovo Studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="container">
+                                        <form class="row g-3">
+                                            <div class="col-md-6 text-start">
+                                                <label for="student_name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="student_name" required="">
+                                            </div>
+                                            <!-- /student_name -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="student_surname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="student_surname" required="">
+                                            </div>
+                                            <!-- /student_surname -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="student_email" class="form-label">Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text px-2 bg_search" id="email_icon">
+                                                    <i class="fa-solid fa-at fa-fw"></i>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="email" required="">
+                                                </div>
+                                            </div>
+                                            <!-- /student_email -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="student_password" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="student_password" required="">
+                                            </div>
+                                            <!-- /student_password -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="confirm_email" class="form-label">Conferma Email</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text px-2 bg_search" id="confirm_email_icon">
+                                                    <i class="fa-solid fa-at fa-fw"></i>
+                                                    </span>
+                                                    <input type="email" class="form-control" id="confirm_email" required="">
+                                                </div>
+                                            </div>
+                                            <!-- /confirm_email -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="confirm_password" class="form-label">Conferma Password</label>
+                                                <input type="password" class="form-control" id="confirm_password" required="">
+                                            </div>
+                                            <!-- /confirm_password -->
+                        
+                                            <div class="col-12 text-start">
+                                                <label for="student_address" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="student_address" required="">
+                                            </div>
+                                            <!-- /student_address -->
+                        
+                                            <div class="col-md-6 text-start">
+                                                <label for="student_city" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="student_city" required="">
+                                            </div>
+                                            <!-- /student_city -->
+                        
+                                            <div class="col-md-4 text-start">
+                                                <label for="student_country" class="form-label">Stato</label>
+                                                <select id="student_country" class="form-select" required="">
+                                                    <option selected="">Scegli...</option>
+                                                    <option>Italy</option>
+                                                    <option>Spain</option>
+                                                    <option>France</option>
+                                                    <option>U.S.A.</option>
+                                                </select>
+                                            </div>
+                                            <!-- /student_country -->
+                        
+                                            <div class="col-md-2 text-start">
+                                                <label for="student_cap" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="student_cap" required="">
+                                            </div>
+                                            <!-- /student_cap -->
+                        
+                                            <div class="col-12 text-start">
+                                                <label for="student_photo" class="form-label">Foto</label>
+                                                <input type="file" class="form-control" id="student_photo" required="">
+                                            </div>
+                                            <!-- /student_photo -->
+                        
+                                            <div class="col-12 text-start">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="student_form_check" required="">
+                                                    <label class="form-check-label" for="student_form_check">
+                                                    Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <!-- /form check -->
+                        
+                                            <div class="col-12 text-start">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                            <!-- /submit reset -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <!-- /add student -->
+
+                        <div class="col-12 col-md-4 col-xl-4 py-4">
+
+                            <div class="d-flex align-items-center flex-wrap">
+                                <span class="me-3"><h2>Boolean</h2></span>
+                                <span class="badge rounded-pill text-bg-dark bg-opacity-25">Piano blaze</span>
+                            </div>
+                            <div class="d-flex align-items-center flex-wrap fw-semibold">
+                                <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-1">3 app</span>
+                                <span class="my-1 me-1">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </span>
+                                <p class="d-xl-none m-0">
+                                  <a class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2 text-decoration-none" data-bs-toggle="collapse" href="#badge_collapse" role="button" aria-expanded="false" aria-controls="badge_collapse">
+                                    +
+                                  </a>
+                                </p>
+                                <div class="collapse d-xl-block" id="badge_collapse">
+                                  <div class="card card-body p-0 bg-transparent border-0 flex-row flex-wrap">
+                                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean mobile app</span>
+                                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean web app</span>
+                                    <span class="badge rounded-pill text-bg-dark bg-opacity-25 my-1 me-2">Boolean blog app</span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-4 col-xl-4 py-4 student_online">
+                            <div class="fs-6">
+                                <span>
+                                    Studenti online negli ultimi 30 minuti:
+                                </span> 
+                            </div>
+                            <div class="fs-2">
+                                <span>
+                                    125
+                                </span>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /banner top -->
+
+
+
+
+
+
+
+            
+        </div>
+       <!-- /content -->
+
 
 
 
