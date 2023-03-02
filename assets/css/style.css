@@ -21,8 +21,6 @@ img{
 }
 
 
-
-
 /* #region Debug */
 
 
@@ -177,9 +175,17 @@ section.faq .card-body button:hover{
 
 /* #region @Media */
 
-@media screen and (max-width: 958px) {
+@media screen and (max-width: 991px) {
     .banner_top .student_offcanvas{
         width: 100%;
+    }
+
+    #todo{
+        margin-top: 1rem;
+    }
+
+    .graphic{
+        margin-bottom: 1rem;
     }
 
 }
@@ -191,6 +197,12 @@ section.faq .card-body button:hover{
     }
 }
 
+@media screen and (min-width: 991px) {
+    .faq,
+    .graphic{
+        margin-bottom: 1rem;
+    }
+}
 
 
 
