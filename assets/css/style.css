@@ -137,6 +137,10 @@ img{
     width: 50%;
 }
 
+.content{
+    overflow-y: auto;
+}
+
 .img_avatar{
     width: 30px;
 }
