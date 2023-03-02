@@ -149,6 +149,10 @@ img{
     background-color: var(--lightgrey-);
 }
 
+section.faq .card-body button:hover{
+    background-color: var(--lightgrey-);
+}
+
 /* #endregion Main */
 
 
